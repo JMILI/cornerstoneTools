@@ -78,7 +78,7 @@ export default function(evt) {
       } = data.handles;
 
       const lineOptions = { color };
-      const perpendicularLineOptions = { color, strokeWidth };
+      const perpendicularLineOptions = { color };
 
       if (renderDashed) {
         lineOptions.lineDash = lineDash;
@@ -89,7 +89,7 @@ export default function(evt) {
       drawLine(context, element, start, end, lineOptions);
 
       // Draw perpendicular line
-      const strokeWidth = lineWidth;
+      // const strokeWidth = lineWidth;
 
       updatePerpendicularLineHandles(eventData, data);
 
